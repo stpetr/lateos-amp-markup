@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: Asap;
+}
+
+.hidden {
+  display: none;
+}
+
+.float-right {
+  float: right!important;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.text-green {
+  color: @green;
+}

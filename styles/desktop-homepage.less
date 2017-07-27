@@ -1,0 +1,187 @@
+.main-wrapper {
+  .content {
+    .categories {
+
+    }
+
+    .news-header {
+      margin-top: 6%;
+      font-size: 78px * @ratio;
+      font-family: Victoire-bold;
+      text-align: center;
+
+      &-content {
+        position: relative;
+
+        &:before, &:after {
+          content: '';
+          display: inline-block;
+          width: 200px;
+          border-bottom: 3px solid black;
+          position: absolute;
+          top: 60px;
+        }
+
+        &:before {
+          left: -232px;
+        }
+
+        &:after {
+          right: -225px;
+        }
+      }
+
+      &-green {
+        color: @green;
+      }
+    }
+
+    .news {
+      margin: 0 115px * @ratio;
+
+      .news-col {
+        float: left;
+        width: ~"calc(33.33% - 20px * @{ratio})";
+        margin-right: 30px * @ratio;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+
+      .news-item {
+        margin-bottom: 105px * @ratio;
+
+        &-image {
+          width: 100%;
+        }
+
+        &-content {
+          margin-top: -5px;
+          padding: 17px 4% 20px 14%;
+          background-color: #efefef;
+
+          &-header {
+            font-size: 18px * @ratio;
+            letter-spacing: 1px;
+            font-family: Victoire-bold;
+          }
+
+          &-text {
+            font-size: 20px * @ratio;
+            font-family: Asap-medium;
+          }
+
+          &-tags {
+            font-size: 20px * @ratio;
+            font-family: Asap-medium;
+          }
+        }
+      }
+    }
+
+    .politics {
+      margin-top: 5% * @ratio;
+
+      .tile {
+        &-content {
+          &-left {
+            background-color: #0b0e27;
+
+            .meet {
+              margin-bottom: 0;
+              font-size: 26px * @ratio;
+              font-family: Asap-medium;
+              letter-spacing: 4px * @ratio;
+            }
+
+            .meet-who {
+              margin-top: 10px * @ratio;
+              font-size: 45px * @ratio;
+              font-family: Victoire-bold;
+              letter-spacing: 2px * @ratio;
+            }
+
+            .links {
+              margin-top: 28px * @ratio;
+              list-style: none;
+
+              li {
+                margin-bottom: 30px * @ratio;
+                font-size: 18px * @ratio;
+                font-family: Asap;
+                letter-spacing: .5px * @ratio;
+
+                a {
+                  color: white;
+                  text-decoration: none;
+                }
+
+                &:first-child {
+                  position: relative;
+                  display: inline-block;
+                  margin-top: 33px * @ratio;
+                  margin-left: -20px * @ratio;
+                  margin-bottom: 18px * @ratio;
+                  padding: 10px * @ratio 40px * @ratio 10px * @ratio 25px * @ratio;
+                  font-size: 18px * @ratio;
+                  border: 1px solid #ca4f24;
+                  color: #ca4f24;
+
+                  &:before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: -35px * @ratio;
+                    left: -30px * @ratio;
+                    width: 4px * @ratio;
+                    height: 115px * @ratio;
+                    background-color: white;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .business {
+      .tile {
+        &-content {
+          &-left {
+            .header {
+              margin-bottom: 10px * @ratio;
+              font-size: 30px * @ratio;
+              color: @darkBlue;
+            }
+
+            .subheader {
+              position: relative;
+              margin: 0 0 60px * @ratio 0;
+              font-size: 20px * @ratio;
+              color: @darkBlue;
+
+              &:after {
+                content: '';
+                display: inline-block;
+                width: 55px * @ratio;
+                height: 2px;
+                background-color: @darkBlue;
+                position: absolute;
+                left: 0;
+                bottom: -32px * @ratio;
+              }
+            }
+
+            .text {
+              font-size: 16px * @ratio;
+              line-height: 20px * @ratio;
+            }
+          }
+        }
+      }
+    }
+  }
+}
