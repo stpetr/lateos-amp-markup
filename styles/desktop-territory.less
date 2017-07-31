@@ -97,6 +97,71 @@ body.territory-page {
           }
         }
       }
+
+      .block-header {
+        padding: 20px * @ratio 0 40px * @ratio 92px * @ratio;
+        position: relative;
+        font-family: Victoire-bold;
+        font-size: 70px * @ratio;
+        color: @green;
+
+        &.first-letter-underline {
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 105px * @ratio;
+            height: 4px * @ratio;
+            position: absolute;
+            left: 65px * @ratio;
+            bottom: -2px * @ratio;
+            background-color: @green;
+          }
+        }
+      }
+
+      .documents {
+        display: flex;
+        margin-bottom: 40px * @ratio;
+        justify-content: space-between;
+        background-color: @lightGrey;
+
+        .document {
+          display: flex;
+          padding: 138px * @ratio 80px * @ratio 0;
+          position: relative;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          &-image {
+            margin: 0;
+            border-radius: 10px * @ratio;
+          }
+
+          &-download {
+            margin: 136px * @ratio 42px * @ratio;
+            position: relative;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              height: 4px * @ratio;
+              width: 84px * @ratio;
+              position: absolute;
+              left: 0;
+              bottom: -50px * @ratio;
+              background: red;
+            }
+          }
+
+          &-text {
+            margin: -7px * @ratio 0 0 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 15px * @ratio;
+            line-height: 31px * @ratio;
+          }
+        }
+      }
     }
   }
 }
