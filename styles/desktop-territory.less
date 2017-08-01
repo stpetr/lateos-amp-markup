@@ -71,6 +71,7 @@ body.territory-page {
 
           &-category {
             position: relative;
+            display: inline-block;
             margin-top: 0;
             margin-bottom: 35px * @ratio;
             font-size: 22px * @ratio;
@@ -94,6 +95,14 @@ body.territory-page {
           .read-more {
             margin: 58px * @ratio 0 0 0;
             padding: 10px * @ratio 43px * @ratio;
+          }
+
+          &.content-hc {
+            .tile-content-category {
+              &:before {
+                left: ~"calc(50% - (78px / 2 * @{ratio}))";
+              }
+            }
           }
         }
       }

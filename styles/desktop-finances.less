@@ -1,0 +1,76 @@
+body.finances-page {
+  .main-wrapper {
+
+    .header {
+      .tile-content {
+        justify-content: flex-end;
+
+        .category {
+          position: relative;
+          margin-top: 65px * @ratio;
+          margin-bottom: 0;
+          font-size: 22px * @ratio;
+          color: @orange;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 105px * @ratio;
+            height: 3px;
+            position: absolute;
+            top: -30px * @ratio;
+            background-color: @darkBlue;
+          }
+        }
+
+        .title {
+          margin: 24px * @ratio 0 0 -7px * @ratio;
+          font-size: 54px * @ratio;
+          line-height: 56px * @ratio;
+          letter-spacing: .8px;
+          font-family: Century-schoolbook;
+          color: @darkBlue;
+        }
+      }
+    }
+
+    .content {
+      .breadcrumbs {
+        .current {
+          color: @orange;
+        }
+      }
+
+      .tile {
+        &-content {
+          &-category {
+            position: relative;
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 35px * @ratio;
+            font-size: 22px * @ratio;
+            color: @orange;
+
+            &:before {
+              content: '';
+              display: inline-block;
+              width: 78px * @ratio;
+              height: 4px;
+              position: absolute;
+              bottom: -22px * @ratio;
+              background-color: white;
+            }
+          }
+
+          &.content-hc {
+            .tile-content-category {
+              &:before {
+                left: ~"calc(50% - (78px / 2 * @{ratio}))";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
