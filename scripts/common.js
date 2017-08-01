@@ -23,4 +23,37 @@ $(function() {
             }
         });
     })();
+
+    // Handle side menu
+    (function() {
+        var $menu = $('.side-menu');
+
+        updateMenuPosition();
+
+        // Show side menu button
+        setTimeout(function() {
+            $menu.addClass('loaded');
+        }, 200);
+
+        $menu.find('.side-menu-trigger').on('click', function() {
+            $menu.toggleClass('open');
+            updateMenuPosition();
+        });
+
+        $(window).on('scroll resize', updateMenuPosition);
+
+        function updateMenuPosition() {
+            var top = 0;
+
+            if ($menu.hasClass('open')) {
+                top += $(window).height() / 2 - $menu.outerHeight() / 2;
+            } else {
+                top += $(window).height() / 2 - $menu.find('.side-menu-trigger').height() / 2;
+            }
+
+            $menu.css({
+                top: top
+            });
+        }
+    })();
 });

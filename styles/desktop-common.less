@@ -318,6 +318,7 @@ body {
   margin: 0 auto;
   padding: 35px * @ratio;
   box-sizing: border-box;
+  overflow: hidden;
 
   .header {
     margin-bottom: 13%;
@@ -350,7 +351,171 @@ body {
     }
   }
 
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -420px * @ratio;
+    display: flex;
+    width: 370px * @ratio;
+    padding: 140px * @ratio 0 140px * @ratio 105px * @ratio;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 999;
+
+    &.loaded {
+      left: -370px * @ratio;
+
+      transition-property: left, top;
+      transition-duration: .6s, .6s;
+    }
+
+    &.open {
+      left: -35px * @ratio;
+
+      .side-menu-trigger {
+        background-image: ~"url(../images/icons/side-menu-arrow-left.png)";
+      }
+    }
+
+    &-trigger {
+      width: 50px * @ratio;
+      height: 120px * @ratio;
+      position: absolute;
+      top: 0;
+      right: -50px * @ratio;
+      background-image: ~"url(../images/icons/side-menu-arrow-right.png)";
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    &-links {
+      position: relative;
+      list-style: none;
+      font-size: 21px * @ratio;
+      letter-spacing: 1.5px * @ratio;
+      color: white;
+
+      li {
+        padding: 24px * @ratio 0;
+
+        &.active {
+          padding: 90px * @ratio 0;
+          font-size: 20px * @ratio;
+          letter-spacing: 2.5px * @ratio;
+          color: @green;
+
+          &:first-child {
+            padding-top: 0;
+
+            .list-mark {
+              &:before {
+                border-image: linear-gradient(to top, @green, @darkBlue) 1 100%!important;
+              }
+            }
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+
+            .list-mark {
+              &:before {
+                border-image: linear-gradient(to bottom, @green, @darkBlue) 1 100%!important;
+              }
+            }
+          }
+
+          .list-mark {
+            left: -28px * @ratio;
+            width: 13px * @ratio;
+            height: 13px * @ratio;
+            margin-top: 5px * @ratio;
+            background-color: @green;
+
+            &:before, &:after {
+              top: -60px * @ratio;
+              height: 135px * @ratio;
+              left: 38px * @ratio;
+              border-left: 2px * @ratio dotted @green;
+            }
+
+            &:after {
+              content: none;
+            }
+          }
+        }
+
+        &.active + li {
+          .list-mark {
+            &:before {
+              border-image: linear-gradient(to top, @darkBlue, @green) 1 100%;
+            }
+          }
+        }
+
+        &.before-active {
+          .list-mark {
+            &:after {
+              border-image: linear-gradient(to bottom, @darkBlue, @green) 1 100%;
+            }
+          }
+        }
+
+        &:first-child {
+          .list-mark {
+            &:before {
+              border-image: linear-gradient(to top, @darkBlue, white) 1 100%;
+            }
+          }
+        }
+
+        &:last-child {
+          .list-mark {
+            &:after {
+              border-image: linear-gradient(to bottom, @darkBlue, white) 1 100%;
+            }
+          }
+        }
+
+        .link {
+          color: @darkBlue;
+          text-decoration: none;
+        }
+
+        .list-mark {
+          position: absolute;
+          left: -2px * @ratio;
+          width: 27px * @ratio;
+          height: 27px * @ratio;
+          background-color: @darkBlue;
+          border-radius: 50%;
+
+          &:before, &:after {
+            content: '';
+            display: inline-block;
+            height: 24px * @ratio;
+            position: absolute;
+            left: 12px * @ratio;
+            border-left: 2px * @ratio solid @darkBlue;
+          }
+
+          &:before {
+            top: -52px * @ratio;
+            height: 52px * @ratio;
+          }
+
+          &:after {
+            top: 27px * @ratio;
+            height: 52px * @ratio;
+          }
+        }
+      }
+    }
+  }
+
   .content {
+    position: relative;
+
     .breadcrumbs {
       top: -100px * @ratio;
       position: relative;

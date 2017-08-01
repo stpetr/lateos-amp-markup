@@ -132,6 +132,30 @@ body.territory-page {
           justify-content: space-between;
           align-items: flex-start;
 
+          &:first-child, &:last-child {
+            &:after {
+              content: '';
+              display: inline-block;
+              width: 4px;
+              height: 110px;
+              background-color: white;
+              position: absolute;
+              top: ~"calc(50% - 35px)";
+            }
+          }
+
+          &:first-child {
+            &:after {
+              right: 0;
+            }
+          }
+
+          &:last-child {
+            &:after {
+              left: 0;
+            }
+          }
+
           &-image {
             margin: 0;
             border-radius: 10px * @ratio;
@@ -145,11 +169,11 @@ body.territory-page {
               content: '';
               display: inline-block;
               height: 4px * @ratio;
-              width: 84px * @ratio;
+              width: 75px * @ratio;
               position: absolute;
               left: 0;
               bottom: -50px * @ratio;
-              background: red;
+              background: @darkBlue;
             }
           }
 
