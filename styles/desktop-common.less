@@ -46,7 +46,7 @@ body {
     }
 
     &.content-vt {
-      padding-top: 15%;
+      padding-top: 10%;
       justify-content: flex-start;
     }
 
@@ -59,22 +59,23 @@ body {
       margin: 0;
       font-family: Victoire-bold;
       font-size: 73px * @ratio;
+      line-height: 65px * @ratio;
       text-transform: uppercase;
       letter-spacing: 3px;
     }
 
     h5 {
-      margin: -2px 0 0 -5px;
+      margin: 15px * @ratio 0 0 0;
       font-family: Asap-medium;
       font-size: 26px * @ratio;
       text-transform: uppercase;
-      letter-spacing: 4.5px;
+      letter-spacing: 4.5px * @ratio;
     }
 
     .read-more {
       display: inline-block;
-      margin: 65px 0 0 -2px;
-      padding: 10px 36px;
+      margin: 65px * @ratio 0 0 -2px * @ratio;
+      padding: 10px * @ratio 36px * @ratio;
       border: 1px solid white;
       font-family: Asap;
       font-size: 20px * @ratio;
