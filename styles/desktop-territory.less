@@ -130,19 +130,22 @@ body.territory-page {
 
       .documents {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 40px * @ratio;
-        justify-content: space-between;
+        justify-content: flex-start;
         background-color: @lightGrey;
 
         .document {
           display: flex;
+          flex: 0 0 33.3%;
           padding: 138px * @ratio 80px * @ratio 0;
+          box-sizing: border-box;
           position: relative;
           justify-content: space-between;
           align-items: flex-start;
 
-          &:first-child, &:last-child {
-            &:after {
+          &:nth-child(3n-1) {
+            &:before, &:after {
               content: '';
               display: inline-block;
               width: 4px;
@@ -151,17 +154,13 @@ body.territory-page {
               position: absolute;
               top: ~"calc(50% - 35px)";
             }
-          }
 
-          &:first-child {
+            &:before {
+              left: 0;
+            }
+
             &:after {
               right: 0;
-            }
-          }
-
-          &:last-child {
-            &:after {
-              left: 0;
             }
           }
 
