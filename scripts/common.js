@@ -46,7 +46,7 @@ $(function() {
             var top = 0;
 
             if ($menu.hasClass('open')) {
-                top += $(window).height() / 2 - $menu.outerHeight() / 2;
+                top += $(window).height() / 2 - $menu.height() / 2;
             } else {
                 top += $(window).height() / 2 - $menu.find('.side-menu-trigger').height() / 2;
             }
