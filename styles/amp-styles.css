@@ -1224,6 +1224,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 63.6px 74.2px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
@@ -2397,6 +2398,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 79.2px 92.4px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
@@ -3570,6 +3572,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 85.2px 99.4px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
@@ -4743,6 +4746,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 90px 105px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
@@ -5916,6 +5920,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 99.6px 116.2px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
@@ -7089,6 +7094,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 105px 122.5px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
@@ -8262,6 +8268,7 @@ body {
   }
   body.politics-page .main-wrapper .content .text-blocks-content {
     position: relative;
+    width: 50%;
     padding: 120px 140px;
   }
   body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
