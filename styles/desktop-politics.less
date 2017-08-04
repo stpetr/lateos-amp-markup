@@ -1,4 +1,4 @@
-body.finances-page {
+body.politics-page {
   .main-wrapper {
 
     .header {
@@ -36,6 +36,49 @@ body.finances-page {
       }
     }
 
+    .side-menu {
+      width: 175px * @ratio;
+      padding: 5px * @ratio 0 55px * @ratio 52.5px * @ratio;
+      left: 0;
+      background-color: white;
+
+      &:after {
+        width: 175px * @ratio;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -60px * @ratio;
+        border-bottom: 60px * @ratio solid white;
+        border-right: 50px * @ratio solid transparent;
+        background-color: transparent;
+      }
+
+      &-trigger {
+        display: none;
+      }
+
+      &-links {
+        padding-left: 0;
+
+        li {
+          padding: 20px * @ratio 0;
+
+          &.active {
+            margin-left: -15px * @ratio;
+            padding: 20px * @ratio 0;
+
+            img {
+              width: 100px * @ratio;
+            }
+          }
+
+          img {
+            width: 70px * @ratio;
+          }
+        }
+      }
+    }
+
     .content {
       .breadcrumbs {
         .current {
@@ -52,6 +95,7 @@ body.finances-page {
             margin-bottom: 35px * @ratio;
             font-size: 22px * @ratio;
             color: @green;
+            text-transform: uppercase;
 
             &:before {
               content: '';
@@ -64,11 +108,68 @@ body.finances-page {
             }
           }
 
+          &-note {
+            margin-bottom: 0;
+            font-size: 22px * @ratio;
+            text-transform: uppercase;
+          }
+
           &.content-hc {
             .tile-content-category {
               &:before {
                 left: ~"calc(50% - (78px / 2 * @{ratio}))";
               }
+            }
+          }
+        }
+      }
+
+      .text-blocks {
+        display: flex;
+
+        background-color: @lightGrey;
+        color: @darkBlue;
+
+        &-content {
+          position: relative;
+          padding: 120px * @ratio 140px * @ratio;
+
+          &:first-child {
+            &:after {
+              content: '';
+              display: inline-block;
+              height: 60%;
+              width: 2px;
+              position: absolute;
+              top: 20%;
+              right: 0;
+
+              background-color: @darkBlue;
+            }
+          }
+
+          p {
+            margin-bottom: 20px * @ratio;
+            font-size: 20px * @ratio;
+            line-height: 32px * @ratio;
+          }
+
+          h4 {
+            position: relative;
+            font-size: 18px;
+            letter-spacing: 1px * @ratio;
+            font-family: Asap-medium;
+            color: @green;
+            text-transform: uppercase;
+
+            &:after {
+              content: '';
+              display: block;
+              width: 55px * @ratio;
+              height: 2px * @ratio;
+              margin-top: 20px * @ratio;
+
+              background-color: @darkBlue;
             }
           }
         }
