@@ -1,5 +1,42 @@
 body.gouvernance-page {
   .main-wrapper {
+    .header {
+      .tile-content {
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 400px * @ratio;
+        padding-bottom: 300px * @ratio;
+
+        .category {
+          position: relative;
+          margin-top: 65px * @ratio;
+          margin-bottom: 0;
+          font-size: 22px * @ratio;
+          color: @blue;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 105px * @ratio;
+            height: 3px;
+            position: absolute;
+            top: -30px * @ratio;
+            background-color: @darkBlue;
+          }
+        }
+
+        .title {
+          margin: 24px * @ratio 0 0 -7px * @ratio;
+          font-size: 54px * @ratio;
+          line-height: 56px * @ratio;
+          letter-spacing: .8px;
+          font-family: Century-schoolbook;
+          color: @darkBlue;
+        }
+      }
+    }
+
     .breadcrumbs {
       .current {
         color: @blue;
