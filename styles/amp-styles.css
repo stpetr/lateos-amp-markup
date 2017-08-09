@@ -1258,6 +1258,9 @@ body {
     margin-top: 10.6px;
     background-color: #19222f;
   }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1365px) {
   body {
@@ -2431,6 +2434,9 @@ body {
     height: 1.32px;
     margin-top: 13.2px;
     background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
   }
 }
 @media all and (min-width: 1366px) and (max-width: 1439px) {
@@ -3606,6 +3612,9 @@ body {
     margin-top: 14.2px;
     background-color: #19222f;
   }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
+  }
 }
 @media all and (min-width: 1440px) and (max-width: 1599px) {
   body {
@@ -4779,6 +4788,9 @@ body {
     height: 1.5px;
     margin-top: 15px;
     background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
   }
 }
 @media all and (min-width: 1600px) and (max-width: 1679px) {
@@ -5954,6 +5966,9 @@ body {
     margin-top: 16.6px;
     background-color: #19222f;
   }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
+  }
 }
 @media all and (min-width: 1680px) and (max-width: 1919px) {
   body {
@@ -7128,6 +7143,9 @@ body {
     margin-top: 17.5px;
     background-color: #19222f;
   }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
+  }
 }
 @media all and (min-width: 1920px) {
   body {
@@ -8301,6 +8319,9 @@ body {
     height: 2px;
     margin-top: 20px;
     background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .breadcrumbs .current {
+    color: #009de0;
   }
 }
 body {
