@@ -42,5 +42,106 @@ body.gouvernance-page {
         color: @blue;
       }
     }
+
+    .content {
+      .president {
+        .tile-content-left {
+          display: flex;
+          flex-direction: column;
+          padding-left: 7%;
+          justify-content: center;
+
+          .tile-content-category {
+            position: relative;
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 50px * @ratio;
+            font-size: 22px * @ratio;
+            color: @orange;
+            text-transform: uppercase;
+
+            &:before {
+              content: '';
+              display: inline-block;
+              width: 78px * @ratio;
+              height: 2px;
+              position: absolute;
+              bottom: -22px * @ratio;
+              background-color: white;
+            }
+          }
+
+          .read-more {
+            align-self: flex-start;
+          }
+        }
+      }
+
+      .persons {
+        .clearfix;
+
+        .tile {
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+
+        .person {
+          &:hover {
+            .person-overlay {
+              opacity: 1;
+            }
+          }
+        }
+
+        .person-overlay {
+          display: flex;
+          padding-left: 60px * @ratio;
+          padding-bottom: 60px * @ratio;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-image: ~"url(../images/gouvernance-bureau/overlay-bg.png)";
+          background-size: cover;
+
+          opacity: 0;
+
+          transition-property: opacity;
+          transition-duration: .4s;
+
+          .person-name {
+            position: relative;
+            font-size: 40px * @ratio;
+            letter-spacing: 1px;
+            font-family: Victoire-bold;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              width: 105px * @ratio;
+              height: 2px;
+              position: absolute;
+              left: 0;
+              bottom: -5px * @ratio;
+              background-color: @darkBlue;
+            }
+          }
+
+          .person-position {
+            font-size: 18px * @ratio;
+            font-family: Asap-medium;
+          }
+
+          .read-more {
+            align-self: flex-start;
+          }
+        }
+      }
+    }
   }
 }

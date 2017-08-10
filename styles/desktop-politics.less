@@ -125,43 +125,9 @@ body.politics-page {
       }
 
       .text-blocks {
-        display: flex;
-
-        background-color: @lightGrey;
-        color: @darkBlue;
-
         &-content {
-          position: relative;
-          width: 50%;
-          padding: 120px * @ratio 140px * @ratio;
-
-          &:first-child {
-            &:after {
-              content: '';
-              display: inline-block;
-              height: 60%;
-              width: 2px;
-              position: absolute;
-              top: 20%;
-              right: 0;
-
-              background-color: @darkBlue;
-            }
-          }
-
-          p {
-            margin-bottom: 20px * @ratio;
-            font-size: 20px * @ratio;
-            line-height: 32px * @ratio;
-          }
-
           h4 {
-            position: relative;
-            font-size: 18px;
-            letter-spacing: 1px * @ratio;
-            font-family: Asap-medium;
             color: @green;
-            text-transform: uppercase;
 
             &:after {
               content: '';

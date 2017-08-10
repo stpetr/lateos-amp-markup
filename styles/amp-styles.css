@@ -642,6 +642,62 @@ body {
     font-size: 8.48px;
     line-height: 10.6px;
   }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 63.6px 37.1px 63.6px 74.2px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 10.6px;
+    font-size: 10.6px;
+    line-height: 16.96px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.53px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 63.6px 37.1px 63.6px 74.2px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 10.6px;
+    font-size: 10.6px;
+    line-height: 16.96px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.53px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 63.6px 74.2px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
   .main-wrapper .footer {
     margin-top: 7.95px;
   }
@@ -1217,38 +1273,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 0.53));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 63.6px 74.2px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 10.6px;
-    font-size: 10.6px;
-    line-height: 16.96px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.53px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -1290,6 +1316,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 26.5px;
+    font-size: 11.66px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 41.34px;
+    height: 2px;
+    position: absolute;
+    bottom: -11.66px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 31.8px;
+    padding-bottom: 31.8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 21.2px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 55.65px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -2.65px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 9.54px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1365px) {
@@ -1848,6 +1952,62 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 10.56px;
     line-height: 13.2px;
+  }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 79.2px 46.2px 79.2px 92.4px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 13.2px;
+    font-size: 13.2px;
+    line-height: 21.12px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.66px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 79.2px 46.2px 79.2px 92.4px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 13.2px;
+    font-size: 13.2px;
+    line-height: 21.12px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.66px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 79.2px 92.4px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
   }
   .main-wrapper .footer {
     margin-top: 9.9px;
@@ -2424,38 +2584,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 0.66));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 79.2px 92.4px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 13.2px;
-    font-size: 13.2px;
-    line-height: 21.12px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.66px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -2497,6 +2627,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-size: 14.52px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 51.48px;
+    height: 2px;
+    position: absolute;
+    bottom: -14.52px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 39.6px;
+    padding-bottom: 39.6px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 26.4px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 69.3px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3.3px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 11.88px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 @media all and (min-width: 1366px) and (max-width: 1439px) {
@@ -3055,6 +3263,62 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 11.36px;
     line-height: 14.2px;
+  }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 85.2px 49.7px 85.2px 99.4px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 14.2px;
+    font-size: 14.2px;
+    line-height: 22.72px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.71px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 85.2px 49.7px 85.2px 99.4px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 14.2px;
+    font-size: 14.2px;
+    line-height: 22.72px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.71px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 85.2px 99.4px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
   }
   .main-wrapper .footer {
     margin-top: 10.65px;
@@ -3631,38 +3895,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 0.71));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 85.2px 99.4px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 14.2px;
-    font-size: 14.2px;
-    line-height: 22.72px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.71px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -3704,6 +3938,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 35.5px;
+    font-size: 15.62px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 55.38px;
+    height: 2px;
+    position: absolute;
+    bottom: -15.62px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 42.6px;
+    padding-bottom: 42.6px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 28.4px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 74.55px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3.55px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 12.78px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 @media all and (min-width: 1440px) and (max-width: 1599px) {
@@ -4262,6 +4574,62 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 12px;
     line-height: 15px;
+  }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 90px 52.5px 90px 105px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 90px 52.5px 90px 105px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 90px 105px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
   }
   .main-wrapper .footer {
     margin-top: 11.25px;
@@ -4838,38 +5206,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 0.75));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 90px 105px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 15px;
-    font-size: 15px;
-    line-height: 24px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.75px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -4911,6 +5249,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 37.5px;
+    font-size: 16.5px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 58.5px;
+    height: 2px;
+    position: absolute;
+    bottom: -16.5px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 45px;
+    padding-bottom: 45px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 78.75px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3.75px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 13.5px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 @media all and (min-width: 1600px) and (max-width: 1679px) {
@@ -5469,6 +5885,62 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 13.28px;
     line-height: 16.6px;
+  }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 99.6px 58.1px 99.6px 116.2px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 16.6px;
+    font-size: 16.6px;
+    line-height: 26.56px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.83px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 99.6px 58.1px 99.6px 116.2px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 16.6px;
+    font-size: 16.6px;
+    line-height: 26.56px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.83px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 99.6px 116.2px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
   }
   .main-wrapper .footer {
     margin-top: 12.45px;
@@ -6045,38 +6517,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 0.83));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 99.6px 116.2px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 16.6px;
-    font-size: 16.6px;
-    line-height: 26.56px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.83px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -6118,6 +6560,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 41.5px;
+    font-size: 18.26px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 64.74px;
+    height: 2px;
+    position: absolute;
+    bottom: -18.26px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 49.8px;
+    padding-bottom: 49.8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 33.2px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 87.15px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -4.15px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 14.94px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 @media all and (min-width: 1680px) and (max-width: 1919px) {
@@ -6676,6 +7196,62 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 14px;
     line-height: 17.5px;
+  }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 105px 61.25px 105px 122.5px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 17.5px;
+    font-size: 17.5px;
+    line-height: 28px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.875px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 105px 61.25px 105px 122.5px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 17.5px;
+    font-size: 17.5px;
+    line-height: 28px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.875px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 105px 122.5px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
   }
   .main-wrapper .footer {
     margin-top: 13.125px;
@@ -7252,38 +7828,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 0.875));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 105px 122.5px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 17.5px;
-    font-size: 17.5px;
-    line-height: 28px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.875px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -7325,6 +7871,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 43.75px;
+    font-size: 19.25px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 68.25px;
+    height: 2px;
+    position: absolute;
+    bottom: -19.25px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 52.5px;
+    padding-bottom: 52.5px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 91.875px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -4.375px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 15.75px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 @media all and (min-width: 1920px) {
@@ -7883,6 +8507,62 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 16px;
     line-height: 20px;
+  }
+  .main-wrapper .content .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-block-content {
+    position: relative;
+    padding: 120px 70px 120px 140px;
+  }
+  .main-wrapper .content .text-block-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .main-wrapper .content .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .main-wrapper .content .text-blocks-content {
+    position: relative;
+    padding: 120px 70px 120px 140px;
+  }
+  .main-wrapper .content .text-blocks-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .main-wrapper .content .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .main-wrapper .content .text-blocks-content {
+    width: 50%;
+    padding: 120px 140px;
+  }
+  .main-wrapper .content .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
   }
   .main-wrapper .footer {
     margin-top: 15px;
@@ -8459,38 +9139,8 @@ body {
   body.politics-page .main-wrapper .content .tile-content.content-hc .tile-content-category:before {
     left: calc(50% - (78px / 2 * 1));
   }
-  body.politics-page .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content {
-    position: relative;
-    width: 50%;
-    padding: 120px 140px;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
-  }
-  body.politics-page .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 32px;
-  }
   body.politics-page .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-family: Asap-medium;
     color: #bacb38;
-    text-transform: uppercase;
   }
   body.politics-page .main-wrapper .content .text-blocks-content h4:after {
     content: '';
@@ -8532,6 +9182,84 @@ body {
   }
   body.gouvernance-page .main-wrapper .breadcrumbs .current {
     color: #009de0;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    justify-content: center;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+    color: #ca4f24;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .tile-content-category:before {
+    content: '';
+    display: inline-block;
+    width: 78px;
+    height: 2px;
+    position: absolute;
+    bottom: -22px;
+    background-color: white;
+  }
+  body.gouvernance-page .main-wrapper .content .president .tile-content-left .read-more {
+    align-self: flex-start;
+  }
+  body.gouvernance-page .main-wrapper .content .persons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .tile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person:hover .person-overlay {
+    opacity: 1;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay {
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/gouvernance-bureau/overlay-bg.png);
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .4s;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name {
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: Victoire-bold;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-name:after {
+    content: '';
+    display: inline-block;
+    width: 105px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .person-position {
+    font-size: 18px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page .main-wrapper .content .persons .person-overlay .read-more {
+    align-self: flex-start;
   }
 }
 body {
