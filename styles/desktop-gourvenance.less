@@ -84,6 +84,10 @@ body.gouvernance-page {
           &:not(:last-child) {
             margin-bottom: 0;
           }
+
+          .tile-bg {
+            padding-bottom: 50%;
+          }
         }
 
         .person {
@@ -140,6 +144,36 @@ body.gouvernance-page {
           .read-more {
             align-self: flex-start;
           }
+        }
+      }
+
+      .search-form {
+        margin-top: -40px * @ratio;
+
+        margin-bottom: 140px * @ratio;
+        padding-right: 80px * @ratio;
+        position: relative;
+        text-align: right;
+
+        .first-name, .last-name {
+          width: 380px * @ratio;
+          height: 62px * @ratio;
+          padding-left: 38px * @ratio;
+          font-size: 18px * @ratio;
+          border: 3px * @ratio solid black;
+        }
+
+        .last-name {
+          margin-left: -4px * @ratio;
+          border-left: none;
+        }
+
+        .search-btn {
+          width: 36px * @ratio;
+          height: 39px * @ratio;
+          position: absolute;
+          right: 100px * @ratio;
+          top: 15px * @ratio;
         }
       }
     }
