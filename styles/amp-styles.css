@@ -106,6 +106,12 @@ body {
     border-top: 53px solid white;
     border-right: 60.95px solid transparent;
   }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
+  }
   .tile-bg {
     padding-bottom: 56.5%;
     background-size: cover;
@@ -190,6 +196,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 29.15px;
+    height: 1.06px;
+    margin-top: 10.6px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 63.6px 37.1px 63.6px 74.2px;
+  }
+  .text-block-content p {
+    margin-bottom: 10.6px;
+    font-size: 10.6px;
+    line-height: 16.96px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.53px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 29.15px;
+    height: 1.06px;
+    margin-top: 10.6px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 63.6px 37.1px 63.6px 74.2px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 10.6px;
+    font-size: 10.6px;
+    line-height: 16.96px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.53px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 29.15px;
+    height: 1.06px;
+    margin-top: 10.6px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 63.6px 74.2px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 37.1px 0;
+    padding-left: 42.4px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 14.31px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 24.38px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 29.15px;
+    height: 2.12px;
+    position: absolute;
+    left: 0;
+    bottom: -5.3px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -641,62 +751,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 8.48px;
     line-height: 10.6px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 63.6px 37.1px 63.6px 74.2px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 10.6px;
-    font-size: 10.6px;
-    line-height: 16.96px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.53px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 63.6px 37.1px 63.6px 74.2px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 10.6px;
-    font-size: 10.6px;
-    line-height: 16.96px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.53px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 63.6px 74.2px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 40.28px 0;
@@ -1458,6 +1512,97 @@ body {
     right: 53px;
     top: 7.95px;
   }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 21.2px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 15.9px;
+    padding-left: 53px;
+    font-size: 10.6px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 29.15px;
+    height: 1.06px;
+    margin-top: 10.6px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 42.4px 0 53px;
+    box-sizing: border-box;
+    font-size: 9.54px;
+    line-height: 16.96px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 42.4px 95.4px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 13.78px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 10.6px 0;
+    font-size: 9.54px;
+    font-family: Asap;
+    letter-spacing: 0.689px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 29.15px;
+    height: 1.06px;
+    margin-top: 10.6px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 15.9px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 9.54px;
+    line-height: 11.66px;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1365px) {
   body {
@@ -1479,6 +1624,12 @@ body {
     top: 0;
     border-top: 66px solid white;
     border-right: 75.9px solid transparent;
+  }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
   }
   .tile-bg {
     padding-bottom: 56.5%;
@@ -1564,6 +1715,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 36.3px;
+    height: 1.32px;
+    margin-top: 13.2px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 79.2px 46.2px 79.2px 92.4px;
+  }
+  .text-block-content p {
+    margin-bottom: 13.2px;
+    font-size: 13.2px;
+    line-height: 21.12px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.66px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 36.3px;
+    height: 1.32px;
+    margin-top: 13.2px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 79.2px 46.2px 79.2px 92.4px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 13.2px;
+    font-size: 13.2px;
+    line-height: 21.12px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.66px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 36.3px;
+    height: 1.32px;
+    margin-top: 13.2px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 79.2px 92.4px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 46.2px 0;
+    padding-left: 52.8px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 17.82px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 30.36px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 36.3px;
+    height: 2.64px;
+    position: absolute;
+    left: 0;
+    bottom: -6.6px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -2015,62 +2270,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 10.56px;
     line-height: 13.2px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 79.2px 46.2px 79.2px 92.4px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 13.2px;
-    font-size: 13.2px;
-    line-height: 21.12px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.66px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 79.2px 46.2px 79.2px 92.4px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 13.2px;
-    font-size: 13.2px;
-    line-height: 21.12px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.66px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 79.2px 92.4px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 50.16px 0;
@@ -2832,6 +3031,97 @@ body {
     right: 66px;
     top: 9.9px;
   }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 26.4px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 19.8px;
+    padding-left: 66px;
+    font-size: 13.2px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 36.3px;
+    height: 1.32px;
+    margin-top: 13.2px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 52.8px 0 66px;
+    box-sizing: border-box;
+    font-size: 11.88px;
+    line-height: 21.12px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 52.8px 118.8px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 17.16px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 13.2px 0;
+    font-size: 11.88px;
+    font-family: Asap;
+    letter-spacing: 0.858px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 36.3px;
+    height: 1.32px;
+    margin-top: 13.2px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 19.8px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 11.88px;
+    line-height: 14.52px;
+  }
 }
 @media all and (min-width: 1366px) and (max-width: 1439px) {
   body {
@@ -2853,6 +3143,12 @@ body {
     top: 0;
     border-top: 71px solid white;
     border-right: 81.65px solid transparent;
+  }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
   }
   .tile-bg {
     padding-bottom: 56.5%;
@@ -2938,6 +3234,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 39.05px;
+    height: 1.42px;
+    margin-top: 14.2px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 85.2px 49.7px 85.2px 99.4px;
+  }
+  .text-block-content p {
+    margin-bottom: 14.2px;
+    font-size: 14.2px;
+    line-height: 22.72px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.71px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 39.05px;
+    height: 1.42px;
+    margin-top: 14.2px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 85.2px 49.7px 85.2px 99.4px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 14.2px;
+    font-size: 14.2px;
+    line-height: 22.72px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.71px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 39.05px;
+    height: 1.42px;
+    margin-top: 14.2px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 85.2px 99.4px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 49.7px 0;
+    padding-left: 56.8px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 19.17px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 32.66px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 39.05px;
+    height: 2.84px;
+    position: absolute;
+    left: 0;
+    bottom: -7.1px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -3389,62 +3789,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 11.36px;
     line-height: 14.2px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 85.2px 49.7px 85.2px 99.4px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 14.2px;
-    font-size: 14.2px;
-    line-height: 22.72px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.71px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 85.2px 49.7px 85.2px 99.4px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 14.2px;
-    font-size: 14.2px;
-    line-height: 22.72px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.71px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 85.2px 99.4px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 53.96px 0;
@@ -4206,6 +4550,97 @@ body {
     right: 71px;
     top: 10.65px;
   }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28.4px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 21.3px;
+    padding-left: 71px;
+    font-size: 14.2px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 39.05px;
+    height: 1.42px;
+    margin-top: 14.2px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 56.8px 0 71px;
+    box-sizing: border-box;
+    font-size: 12.78px;
+    line-height: 22.72px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 56.8px 127.8px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 18.46px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 14.2px 0;
+    font-size: 12.78px;
+    font-family: Asap;
+    letter-spacing: 0.923px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 39.05px;
+    height: 1.42px;
+    margin-top: 14.2px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 21.3px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 12.78px;
+    line-height: 15.62px;
+  }
 }
 @media all and (min-width: 1440px) and (max-width: 1599px) {
   body {
@@ -4227,6 +4662,12 @@ body {
     top: 0;
     border-top: 75px solid white;
     border-right: 86.25px solid transparent;
+  }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
   }
   .tile-bg {
     padding-bottom: 56.5%;
@@ -4312,6 +4753,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 41.25px;
+    height: 1.5px;
+    margin-top: 15px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 90px 52.5px 90px 105px;
+  }
+  .text-block-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 41.25px;
+    height: 1.5px;
+    margin-top: 15px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 90px 52.5px 90px 105px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 41.25px;
+    height: 1.5px;
+    margin-top: 15px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 90px 105px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 52.5px 0;
+    padding-left: 60px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 20.25px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 34.5px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 41.25px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -7.5px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -4763,62 +5308,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 12px;
     line-height: 15px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 90px 52.5px 90px 105px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 15px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.75px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 90px 52.5px 90px 105px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 15px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.75px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 90px 105px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 57px 0;
@@ -5580,6 +6069,97 @@ body {
     right: 75px;
     top: 11.25px;
   }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 22.5px;
+    padding-left: 75px;
+    font-size: 15px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 41.25px;
+    height: 1.5px;
+    margin-top: 15px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 60px 0 75px;
+    box-sizing: border-box;
+    font-size: 13.5px;
+    line-height: 24px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 60px 135px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 19.5px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 15px 0;
+    font-size: 13.5px;
+    font-family: Asap;
+    letter-spacing: 0.975px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 41.25px;
+    height: 1.5px;
+    margin-top: 15px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 22.5px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 13.5px;
+    line-height: 16.5px;
+  }
 }
 @media all and (min-width: 1600px) and (max-width: 1679px) {
   body {
@@ -5601,6 +6181,12 @@ body {
     top: 0;
     border-top: 83px solid white;
     border-right: 95.45px solid transparent;
+  }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
   }
   .tile-bg {
     padding-bottom: 56.5%;
@@ -5686,6 +6272,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 45.65px;
+    height: 1.66px;
+    margin-top: 16.6px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 99.6px 58.1px 99.6px 116.2px;
+  }
+  .text-block-content p {
+    margin-bottom: 16.6px;
+    font-size: 16.6px;
+    line-height: 26.56px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.83px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 45.65px;
+    height: 1.66px;
+    margin-top: 16.6px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 99.6px 58.1px 99.6px 116.2px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 16.6px;
+    font-size: 16.6px;
+    line-height: 26.56px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.83px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 45.65px;
+    height: 1.66px;
+    margin-top: 16.6px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 99.6px 116.2px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 58.1px 0;
+    padding-left: 66.4px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 22.41px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 38.18px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 45.65px;
+    height: 3.32px;
+    position: absolute;
+    left: 0;
+    bottom: -8.3px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -6137,62 +6827,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 13.28px;
     line-height: 16.6px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 99.6px 58.1px 99.6px 116.2px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 16.6px;
-    font-size: 16.6px;
-    line-height: 26.56px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.83px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 99.6px 58.1px 99.6px 116.2px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 16.6px;
-    font-size: 16.6px;
-    line-height: 26.56px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.83px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 99.6px 116.2px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 63.08px 0;
@@ -6954,6 +7588,97 @@ body {
     right: 83px;
     top: 12.45px;
   }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 33.2px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 24.9px;
+    padding-left: 83px;
+    font-size: 16.6px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 45.65px;
+    height: 1.66px;
+    margin-top: 16.6px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 66.4px 0 83px;
+    box-sizing: border-box;
+    font-size: 14.94px;
+    line-height: 26.56px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 66.4px 149.4px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 21.58px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 16.6px 0;
+    font-size: 14.94px;
+    font-family: Asap;
+    letter-spacing: 1.079px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 45.65px;
+    height: 1.66px;
+    margin-top: 16.6px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 24.9px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 14.94px;
+    line-height: 18.26px;
+  }
 }
 @media all and (min-width: 1680px) and (max-width: 1919px) {
   body {
@@ -6975,6 +7700,12 @@ body {
     top: 0;
     border-top: 87.5px solid white;
     border-right: 100.625px solid transparent;
+  }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
   }
   .tile-bg {
     padding-bottom: 56.5%;
@@ -7060,6 +7791,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 48.125px;
+    height: 1.75px;
+    margin-top: 17.5px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 105px 61.25px 105px 122.5px;
+  }
+  .text-block-content p {
+    margin-bottom: 17.5px;
+    font-size: 17.5px;
+    line-height: 28px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.875px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 48.125px;
+    height: 1.75px;
+    margin-top: 17.5px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 105px 61.25px 105px 122.5px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 17.5px;
+    font-size: 17.5px;
+    line-height: 28px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.875px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 48.125px;
+    height: 1.75px;
+    margin-top: 17.5px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 105px 122.5px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 61.25px 0;
+    padding-left: 70px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 23.625px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 40.25px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 48.125px;
+    height: 3.5px;
+    position: absolute;
+    left: 0;
+    bottom: -8.75px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -7511,62 +8346,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 14px;
     line-height: 17.5px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 105px 61.25px 105px 122.5px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 17.5px;
-    font-size: 17.5px;
-    line-height: 28px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.875px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 105px 61.25px 105px 122.5px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 17.5px;
-    font-size: 17.5px;
-    line-height: 28px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 0.875px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 105px 122.5px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 66.5px 0;
@@ -8328,6 +9107,97 @@ body {
     right: 87.5px;
     top: 13.125px;
   }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 26.25px;
+    padding-left: 87.5px;
+    font-size: 17.5px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 48.125px;
+    height: 1.75px;
+    margin-top: 17.5px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 70px 0 87.5px;
+    box-sizing: border-box;
+    font-size: 15.75px;
+    line-height: 28px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 70px 157.5px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 22.75px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 17.5px 0;
+    font-size: 15.75px;
+    font-family: Asap;
+    letter-spacing: 1.1375px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 48.125px;
+    height: 1.75px;
+    margin-top: 17.5px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 26.25px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 15.75px;
+    line-height: 19.25px;
+  }
 }
 @media all and (min-width: 1920px) {
   body {
@@ -8349,6 +9219,12 @@ body {
     top: 0;
     border-top: 100px solid white;
     border-right: 115px solid transparent;
+  }
+  .tile .no-margin-b {
+    margin-bottom: -25px;
+  }
+  .tile .no-margin-b .double-height .tile-bg {
+    padding-bottom: calc(56.5% * 2);
   }
   .tile-bg {
     padding-bottom: 56.5%;
@@ -8434,6 +9310,110 @@ body {
   .tile.split-in-two .tile-content-right {
     right: 0;
     background-size: cover;
+  }
+  .underlined:after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #19222f;
+  }
+  .text-block {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-block-content {
+    position: relative;
+    padding: 120px 70px 120px 140px;
+  }
+  .text-block-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .text-block-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-block-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #19222f;
+  }
+  .text-blocks {
+    display: flex;
+    background-color: #efefef;
+    color: #19222f;
+  }
+  .text-blocks-content {
+    position: relative;
+    padding: 120px 70px 120px 140px;
+  }
+  .text-blocks-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .text-blocks-content h4 {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Asap-medium;
+    text-transform: uppercase;
+  }
+  .text-blocks-content h4.underlined:after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #19222f;
+  }
+  .text-blocks-content {
+    width: 50%;
+    padding: 120px 140px;
+  }
+  .text-blocks-content:first-child:after {
+    content: '';
+    display: inline-block;
+    height: 60%;
+    width: 2px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: #19222f;
+  }
+  .header-with-icon {
+    display: flex;
+    margin: 70px 0;
+    padding-left: 80px;
+  }
+  .header-with-icon-icon {
+    align-self: center;
+    margin-right: 27px;
+  }
+  .header-with-icon-header {
+    position: relative;
+    font-size: 46px;
+    font-family: Victoire-bold;
+  }
+  .header-with-icon-header:after {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #19222f;
   }
   .slider .tile .tile-content {
     display: block;
@@ -8885,62 +9865,6 @@ body {
   .main-wrapper .content .business .tile-content-left .text {
     font-size: 16px;
     line-height: 20px;
-  }
-  .main-wrapper .content .text-block {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-block-content {
-    position: relative;
-    padding: 120px 70px 120px 140px;
-  }
-  .main-wrapper .content .text-block-content p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .main-wrapper .content .text-block-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks {
-    display: flex;
-    background-color: #efefef;
-    color: #19222f;
-  }
-  .main-wrapper .content .text-blocks-content {
-    position: relative;
-    padding: 120px 70px 120px 140px;
-  }
-  .main-wrapper .content .text-blocks-content p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .main-wrapper .content .text-blocks-content h4 {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-family: Asap-medium;
-    text-transform: uppercase;
-  }
-  .main-wrapper .content .text-blocks-content {
-    width: 50%;
-    padding: 120px 140px;
-  }
-  .main-wrapper .content .text-blocks-content:first-child:after {
-    content: '';
-    display: inline-block;
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    background-color: #19222f;
   }
   .main-wrapper .content .pagination-wrapper {
     margin: 76px 0;
@@ -9701,6 +10625,97 @@ body {
     position: absolute;
     right: 100px;
     top: 15px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content {
+    padding: 0;
+    flex-direction: row;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block p {
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .header > .tile-content .text-block h4 {
+    color: #ca4f24;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 80px 0;
+    justify-content: flex-start;
+    background-color: #efefef;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header {
+    margin-bottom: 30px;
+    padding-left: 100px;
+    font-size: 20px;
+    flex: 0 0 100%;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-header:after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article {
+    display: flex;
+    flex: 0 0 33.3%;
+    padding: 0 80px 0 100px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 32px;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before,
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 110px;
+    background-color: #19222f;
+    position: absolute;
+    top: calc(50% - 55px);
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):before {
+    left: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .biography-article:nth-of-type(3n-1):after {
+    right: 0;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content {
+    padding: 80px 180px;
+    justify-content: flex-start;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h3 {
+    font-size: 26px;
+    font-family: Asap;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-family: Asap;
+    letter-spacing: 1.3px;
+    color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #19222f;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content h5:after {
+    margin-top: 30px;
+  }
+  body.gouvernance-page.elected-person .main-wrapper .events .tile .tile-content p {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 body {

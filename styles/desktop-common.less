@@ -21,6 +21,16 @@ body {
     }
   }
 
+  .no-margin-b {
+    margin-bottom: -25px;
+
+    .double-height {
+      .tile-bg {
+        padding-bottom: ~'calc(56.5% * 2)';
+      }
+    }
+  }
+
   &-bg {
     padding-bottom: 56.5%;
     background-size: cover;
@@ -125,6 +135,108 @@ body {
         right: 0;
         background-size: cover;
       }
+    }
+  }
+}
+
+.underlined {
+  &:after {
+    content: '';
+    display: block;
+    width: 55px * @ratio;
+    height: 2px * @ratio;
+    margin-top: 20px * @ratio;
+
+    background-color: @darkBlue;
+  }
+}
+
+.text-block {
+  display: flex;
+
+  background-color: @lightGrey;
+  color: @darkBlue;
+
+  &-content {
+    position: relative;
+    padding: 120px * @ratio 70px * @ratio 120px * @ratio 140px * @ratio;
+
+    p {
+      margin-bottom: 20px * @ratio;
+      font-size: 20px * @ratio;
+      line-height: 32px * @ratio;
+    }
+
+    h4 {
+
+      position: relative;
+      font-size: 18px;
+      letter-spacing: 1px * @ratio;
+      font-family: Asap-medium;
+      text-transform: uppercase;
+
+      &.underlined {
+        &:after {
+          content: '';
+          display: block;
+          width: 55px * @ratio;
+          height: 2px * @ratio;
+          margin-top: 20px * @ratio;
+
+          background-color: @darkBlue;
+        }
+      }
+    }
+  }
+}
+
+.text-blocks {
+  .text-block;
+
+  &-content {
+    width: 50%;
+    padding: 120px * @ratio 140px * @ratio;
+
+    &:first-child {
+      &:after {
+        content: '';
+        display: inline-block;
+        height: 60%;
+        width: 2px;
+        position: absolute;
+        top: 20%;
+        right: 0;
+
+        background-color: @darkBlue;
+      }
+    }
+  }
+}
+
+.header-with-icon {
+  display: flex;
+  margin: 70px * @ratio 0;
+  padding-left: 80px * @ratio;
+
+  &-icon {
+    align-self: center;
+    margin-right: 27px * @ratio;
+  }
+
+  &-header {
+    position: relative;
+    font-size: 46px * @ratio;
+    font-family: Victoire-bold;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 55px * @ratio;
+      height: 4px * @ratio;
+      position: absolute;
+      left: 0;
+      bottom: -10px * @ratio;
+      background-color: @darkBlue;
     }
   }
 }
@@ -727,55 +839,6 @@ body {
               font-size: 16px * @ratio;
               line-height: 20px * @ratio;
             }
-          }
-        }
-      }
-    }
-
-    .text-block {
-      display: flex;
-
-      background-color: @lightGrey;
-      color: @darkBlue;
-
-      &-content {
-        position: relative;
-        padding: 120px * @ratio 70px * @ratio 120px * @ratio 140px * @ratio;
-
-        p {
-          margin-bottom: 20px * @ratio;
-          font-size: 20px * @ratio;
-          line-height: 32px * @ratio;
-        }
-
-        h4 {
-          position: relative;
-          font-size: 18px;
-          letter-spacing: 1px * @ratio;
-          font-family: Asap-medium;
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    .text-blocks {
-      .text-block;
-
-      &-content {
-        width: 50%;
-        padding: 120px * @ratio 140px * @ratio;
-
-        &:first-child {
-          &:after {
-            content: '';
-            display: inline-block;
-            height: 60%;
-            width: 2px;
-            position: absolute;
-            top: 20%;
-            right: 0;
-
-            background-color: @darkBlue;
           }
         }
       }
