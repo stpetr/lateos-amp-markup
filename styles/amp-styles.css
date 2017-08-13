@@ -290,6 +290,7 @@ body {
     position: relative;
     font-size: 24.38px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -1640,6 +1641,87 @@ body {
     width: 15.37px;
     height: 15.37px;
   }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 50.88px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 63.6px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 37.1px 0;
+    padding-left: 42.4px;
+    flex: 0 0 100%;
+    margin: 15.9px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 14.31px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 24.38px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 29.15px;
+    height: 2.12px;
+    position: absolute;
+    left: 0;
+    bottom: -5.3px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 15.9px;
+    letter-spacing: 1.06px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -13.25px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 10.6px;
+    padding-left: 49.82px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 2.65px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -4.24px;
+    font-size: 12.72px;
+    line-height: 23.85px;
+    letter-spacing: 0.212px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 9.54px;
+    letter-spacing: 0.795px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 14.31px;
+    line-height: 15.9px;
+    letter-spacing: 0.212px;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1365px) {
   body {
@@ -1846,6 +1928,7 @@ body {
     position: relative;
     font-size: 30.36px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -3196,6 +3279,87 @@ body {
     width: 19.14px;
     height: 19.14px;
   }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 63.36px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 79.2px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 46.2px 0;
+    padding-left: 52.8px;
+    flex: 0 0 100%;
+    margin: 19.8px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 17.82px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 30.36px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 36.3px;
+    height: 2.64px;
+    position: absolute;
+    left: 0;
+    bottom: -6.6px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 19.8px;
+    letter-spacing: 1.32px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -16.5px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 13.2px;
+    padding-left: 62.04px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 3.3px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -5.28px;
+    font-size: 15.84px;
+    line-height: 29.7px;
+    letter-spacing: 0.264px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 11.88px;
+    letter-spacing: 0.99px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 17.82px;
+    line-height: 19.8px;
+    letter-spacing: 0.264px;
+  }
 }
 @media all and (min-width: 1366px) and (max-width: 1439px) {
   body {
@@ -3402,6 +3566,7 @@ body {
     position: relative;
     font-size: 32.66px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -4752,6 +4917,87 @@ body {
     width: 20.59px;
     height: 20.59px;
   }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 68.16px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 85.2px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 49.7px 0;
+    padding-left: 56.8px;
+    flex: 0 0 100%;
+    margin: 21.3px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 19.17px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 32.66px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 39.05px;
+    height: 2.84px;
+    position: absolute;
+    left: 0;
+    bottom: -7.1px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 21.3px;
+    letter-spacing: 1.42px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -17.75px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 14.2px;
+    padding-left: 66.74px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 3.55px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -5.68px;
+    font-size: 17.04px;
+    line-height: 31.95px;
+    letter-spacing: 0.284px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 12.78px;
+    letter-spacing: 1.065px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 19.17px;
+    line-height: 21.3px;
+    letter-spacing: 0.284px;
+  }
 }
 @media all and (min-width: 1440px) and (max-width: 1599px) {
   body {
@@ -4958,6 +5204,7 @@ body {
     position: relative;
     font-size: 34.5px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -6308,6 +6555,87 @@ body {
     width: 21.75px;
     height: 21.75px;
   }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 72px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 90px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 52.5px 0;
+    padding-left: 60px;
+    flex: 0 0 100%;
+    margin: 22.5px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 20.25px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 34.5px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 41.25px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -7.5px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 22.5px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -18.75px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 15px;
+    padding-left: 70.5px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 3.75px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -6px;
+    font-size: 18px;
+    line-height: 33.75px;
+    letter-spacing: 0.3px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 13.5px;
+    letter-spacing: 1.125px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 20.25px;
+    line-height: 22.5px;
+    letter-spacing: 0.3px;
+  }
 }
 @media all and (min-width: 1600px) and (max-width: 1679px) {
   body {
@@ -6514,6 +6842,7 @@ body {
     position: relative;
     font-size: 38.18px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -7864,6 +8193,87 @@ body {
     width: 24.07px;
     height: 24.07px;
   }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 79.68px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 99.6px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 58.1px 0;
+    padding-left: 66.4px;
+    flex: 0 0 100%;
+    margin: 24.9px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 22.41px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 38.18px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 45.65px;
+    height: 3.32px;
+    position: absolute;
+    left: 0;
+    bottom: -8.3px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 24.9px;
+    letter-spacing: 1.66px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -20.75px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 16.6px;
+    padding-left: 78.02px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 4.15px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -6.64px;
+    font-size: 19.92px;
+    line-height: 37.35px;
+    letter-spacing: 0.332px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 14.94px;
+    letter-spacing: 1.245px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 22.41px;
+    line-height: 24.9px;
+    letter-spacing: 0.332px;
+  }
 }
 @media all and (min-width: 1680px) and (max-width: 1919px) {
   body {
@@ -8070,6 +8480,7 @@ body {
     position: relative;
     font-size: 40.25px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -9420,6 +9831,87 @@ body {
     width: 25.375px;
     height: 25.375px;
   }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 84px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 105px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 61.25px 0;
+    padding-left: 70px;
+    flex: 0 0 100%;
+    margin: 26.25px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 23.625px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 40.25px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 48.125px;
+    height: 3.5px;
+    position: absolute;
+    left: 0;
+    bottom: -8.75px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 26.25px;
+    letter-spacing: 1.75px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -21.875px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 17.5px;
+    padding-left: 82.25px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 4.375px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -7px;
+    font-size: 21px;
+    line-height: 39.375px;
+    letter-spacing: 0.35px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 15.75px;
+    letter-spacing: 1.3125px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 23.625px;
+    line-height: 26.25px;
+    letter-spacing: 0.35px;
+  }
 }
 @media all and (min-width: 1920px) {
   body {
@@ -9626,6 +10118,7 @@ body {
     position: relative;
     font-size: 46px;
     font-family: Victoire-bold;
+    color: #19222f;
   }
   .header-with-icon-header:after {
     content: '';
@@ -10975,6 +11468,87 @@ body {
   body.gouvernance-page.news .news-tile .tile-content .news-wrapper .news-read-more img {
     width: 29px;
     height: 29px;
+  }
+  body.gouvernance-page.agenda .month-events {
+    display: flex;
+    padding: 0 96px;
+    flex-wrap: wrap;
+  }
+  body.gouvernance-page.agenda .month-events:last-child {
+    margin-bottom: 120px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header {
+    display: flex;
+    margin: 70px 0;
+    padding-left: 80px;
+    flex: 0 0 100%;
+    margin: 30px 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: center;
+    margin-right: 27px;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    position: relative;
+    font-size: 46px;
+    font-family: Victoire-bold;
+    color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #055576;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-icon {
+    align-self: flex-end;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header {
+    font-family: Asap-medium;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  body.gouvernance-page.agenda .month-events .month-events-header-header:after {
+    bottom: -25px;
+  }
+  body.gouvernance-page.agenda .month-events .event {
+    flex: 0 0 33.3%;
+    margin-bottom: 20px;
+    padding-left: 94px;
+    box-sizing: border-box;
+  }
+  body.gouvernance-page.agenda .month-events .event > * {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  body.gouvernance-page.agenda .month-events .event-date {
+    margin-left: -8px;
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: 0.4px;
+    font-family: Century-schoolbook;
+    color: #ca4f24;
+  }
+  body.gouvernance-page.agenda .month-events .event-title {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: Asap-medium;
+  }
+  body.gouvernance-page.agenda .month-events .event-place {
+    font-style: italic;
+  }
+  body.gouvernance-page.agenda .month-events .event-description {
+    margin-top: 27px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
   }
 }
 body {

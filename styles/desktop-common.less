@@ -213,7 +213,7 @@ body {
   }
 }
 
-.header-with-icon {
+.header-with-icon-fn(@color: @darkBlue) {
   display: flex;
   margin: 70px * @ratio 0;
   padding-left: 80px * @ratio;
@@ -227,6 +227,7 @@ body {
     position: relative;
     font-size: 46px * @ratio;
     font-family: Victoire-bold;
+    color: @color;
 
     &:after {
       content: '';
@@ -236,9 +237,13 @@ body {
       position: absolute;
       left: 0;
       bottom: -10px * @ratio;
-      background-color: @darkBlue;
+      background-color: @color;
     }
   }
+}
+
+.header-with-icon {
+  .header-with-icon-fn();
 }
 
 .slider {
