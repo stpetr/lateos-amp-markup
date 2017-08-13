@@ -416,4 +416,68 @@ body.gouvernance-page {
       }
     }
   }
+
+  &.counceil-territory {
+    .block-header {
+      margin-top: 52px; //
+
+      padding-left: 100px * @ratio;
+      font-size: 18px * @ratio;
+      letter-spacing: 1.5px * @ratio;
+      position: relative;
+      font-family: Asap-medium;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 55px * @ratio;
+        height: 4px * @ratio;
+        position: absolute;
+        left: 100px * @ratio;
+        bottom: -18px * @ratio;
+        background-color: @darkBlue;
+      }
+    }
+
+    .persons {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 70px * @ratio 0 100px * @ratio;
+      padding: 46px * @ratio 96px * @ratio;
+      background-color: @lightGrey;
+
+      .person {
+        position: relative;
+        flex: 0 0 16%;
+        margin-bottom: 2px * @ratio;
+        padding-right: 20px * @ratio;
+        box-sizing: border-box;
+
+        &:nth-of-type(6n - 3) {
+          margin-right: 4%;
+        }
+
+        &-name {
+          margin-bottom: 5px * @ratio;
+          position: relative;
+          font-size: 20px;
+          letter-spacing: .5px;
+          font-family: Victoire-bold;
+        }
+
+        &-link {
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 75px * @ratio;
+            height: 4px * @ratio;
+            margin-right: 15px * @ratio;
+            position: relative;
+            top: -14px * @ratio;
+            background-color: @darkBlue;
+          }
+        }
+      }
+    }
+  }
 }
