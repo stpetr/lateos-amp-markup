@@ -293,4 +293,53 @@ body.gouvernance-page {
       }
     }
   }
+
+  &.news {
+    .news-tile {
+      .tile-content {
+        padding: 0;
+        justify-content: flex-end;
+
+        .news-wrapper {
+          width: 100%;
+          padding: 50px * @ratio 90px * @ratio;
+          position: relative;
+          box-sizing: border-box;
+          background-color: rgba(255, 255, 255, .75);
+          color: @darkBlue;
+
+          .news-lead {
+            margin: 0;
+            font-size: 20px * @ratio;
+
+            .news-lead-text {
+              font-style: italic;
+            }
+
+            .news-date {
+              color: @blue;
+            }
+          }
+
+          .news-title {
+            line-height: 30px * @ratio;
+            font-size: 20px * @ratio;
+            font-family: Victoire-bold;
+            letter-spacing: 1px;
+          }
+
+          .news-read-more {
+            position: absolute;
+            right: 50px * @ratio;
+            top: ~"calc(50% - 14px * @{ratio})";
+
+            img {
+              width: 29px * @ratio;
+              height: 29px * @ratio;
+            }
+          }
+        }
+      }
+    }
+  }
 }
