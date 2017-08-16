@@ -443,9 +443,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 18.55px;
+    padding: 0 18.55px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 63.6px;
+    padding: 0 53px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 26.5px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 2.12px;
+    margin-bottom: 6.36px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 37.1px;
+    padding-bottom: 2.65px;
+    font-size: 9.54px;
+    font-family: Asap-medium;
+    letter-spacing: 0.265px;
+    border-bottom: 2.12px solid #ca4f24;
+    position: relative;
+    top: -13.25px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 29.15px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -2.65px;
+    right: -39.75px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 15.9px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 15.9px;
+    height: 15.9px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 0.53);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 77.38px;
+    height: 46.64px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 177.55px;
+    height: 26.5px;
+    padding-left: 7.95px;
+    border: 2.12px solid #19222f;
+    font-size: 12.72px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 19.08px;
+    height: 20.67px;
+    margin-left: -26.5px;
+    position: relative;
+    top: 7.95px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -1900,6 +1970,127 @@ body {
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
   }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 10.6px;
+    font-size: 31.8px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 39.75px 0 53px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 344.5px;
+    height: 31.8px;
+    padding: 0 0 0 10.6px;
+    border: none;
+    font-size: 11.66px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 31.8px;
+    height: 31.8px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 58.3px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -47.7px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 21.2px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 7.95px 42.4px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 39.75px;
+    height: 1.59px;
+    margin-top: 13.25px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 2.12px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 2.12px;
+    font-size: 19.08px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.265px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 10.6px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 23.85px;
+    line-height: 1.8;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1365px) {
   body {
@@ -2259,9 +2450,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 23.1px;
+    padding: 0 23.1px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 79.2px;
+    padding: 0 66px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 33px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 2.64px;
+    margin-bottom: 7.92px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 46.2px;
+    padding-bottom: 3.3px;
+    font-size: 11.88px;
+    font-family: Asap-medium;
+    letter-spacing: 0.33px;
+    border-bottom: 2.64px solid #ca4f24;
+    position: relative;
+    top: -16.5px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 36.3px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -3.3px;
+    right: -49.5px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 19.8px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 19.8px;
+    height: 19.8px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 0.66);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 96.36px;
+    height: 58.08px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 221.1px;
+    height: 33px;
+    padding-left: 9.9px;
+    border: 2.64px solid #19222f;
+    font-size: 15.84px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 23.76px;
+    height: 25.74px;
+    margin-left: -33px;
+    position: relative;
+    top: 9.9px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -3716,6 +3977,127 @@ body {
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
   }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 13.2px;
+    font-size: 39.6px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 49.5px 0 66px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 429px;
+    height: 39.6px;
+    padding: 0 0 0 13.2px;
+    border: none;
+    font-size: 14.52px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 39.6px;
+    height: 39.6px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 72.6px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -59.4px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 26.4px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 9.9px 52.8px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 49.5px;
+    height: 1.98px;
+    margin-top: 16.5px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 2.64px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 2.64px;
+    font-size: 23.76px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.33px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 13.2px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 29.7px;
+    line-height: 1.8;
+  }
 }
 @media all and (min-width: 1366px) and (max-width: 1439px) {
   body {
@@ -4075,9 +4457,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 24.85px;
+    padding: 0 24.85px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 85.2px;
+    padding: 0 71px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 35.5px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 2.84px;
+    margin-bottom: 8.52px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 49.7px;
+    padding-bottom: 3.55px;
+    font-size: 12.78px;
+    font-family: Asap-medium;
+    letter-spacing: 0.355px;
+    border-bottom: 2.84px solid #ca4f24;
+    position: relative;
+    top: -17.75px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 39.05px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -3.55px;
+    right: -53.25px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 21.3px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 21.3px;
+    height: 21.3px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 0.71);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 103.66px;
+    height: 62.48px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 237.85px;
+    height: 35.5px;
+    padding-left: 10.65px;
+    border: 2.84px solid #19222f;
+    font-size: 17.04px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 25.56px;
+    height: 27.69px;
+    margin-left: -35.5px;
+    position: relative;
+    top: 10.65px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -5532,6 +5984,127 @@ body {
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
   }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 14.2px;
+    font-size: 42.6px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 53.25px 0 71px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 461.5px;
+    height: 42.6px;
+    padding: 0 0 0 14.2px;
+    border: none;
+    font-size: 15.62px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 42.6px;
+    height: 42.6px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 78.1px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -63.9px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28.4px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 10.65px 56.8px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 53.25px;
+    height: 2.13px;
+    margin-top: 17.75px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 2.84px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 2.84px;
+    font-size: 25.56px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.355px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 14.2px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 31.95px;
+    line-height: 1.8;
+  }
 }
 @media all and (min-width: 1440px) and (max-width: 1599px) {
   body {
@@ -5891,9 +6464,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 26.25px;
+    padding: 0 26.25px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 90px;
+    padding: 0 75px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 37.5px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 9px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 52.5px;
+    padding-bottom: 3.75px;
+    font-size: 13.5px;
+    font-family: Asap-medium;
+    letter-spacing: 0.375px;
+    border-bottom: 3px solid #ca4f24;
+    position: relative;
+    top: -18.75px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 41.25px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -3.75px;
+    right: -56.25px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 22.5px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 22.5px;
+    height: 22.5px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 0.75);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 109.5px;
+    height: 66px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 251.25px;
+    height: 37.5px;
+    padding-left: 11.25px;
+    border: 3px solid #19222f;
+    font-size: 18px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 27px;
+    height: 29.25px;
+    margin-left: -37.5px;
+    position: relative;
+    top: 11.25px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -7348,6 +7991,127 @@ body {
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
   }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 15px;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 56.25px 0 75px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 487.5px;
+    height: 45px;
+    padding: 0 0 0 15px;
+    border: none;
+    font-size: 16.5px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 82.5px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -67.5px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 11.25px 60px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 56.25px;
+    height: 2.25px;
+    margin-top: 18.75px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 3px;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.375px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 15px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 33.75px;
+    line-height: 1.8;
+  }
 }
 @media all and (min-width: 1600px) and (max-width: 1679px) {
   body {
@@ -7707,9 +8471,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 29.05px;
+    padding: 0 29.05px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 99.6px;
+    padding: 0 83px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 41.5px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 3.32px;
+    margin-bottom: 9.96px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 58.1px;
+    padding-bottom: 4.15px;
+    font-size: 14.94px;
+    font-family: Asap-medium;
+    letter-spacing: 0.415px;
+    border-bottom: 3.32px solid #ca4f24;
+    position: relative;
+    top: -20.75px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 45.65px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -4.15px;
+    right: -62.25px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 24.9px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 24.9px;
+    height: 24.9px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 0.83);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 121.18px;
+    height: 73.04px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 278.05px;
+    height: 41.5px;
+    padding-left: 12.45px;
+    border: 3.32px solid #19222f;
+    font-size: 19.92px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 29.88px;
+    height: 32.37px;
+    margin-left: -41.5px;
+    position: relative;
+    top: 12.45px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -9164,6 +9998,127 @@ body {
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
   }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 16.6px;
+    font-size: 49.8px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 62.25px 0 83px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 539.5px;
+    height: 49.8px;
+    padding: 0 0 0 16.6px;
+    border: none;
+    font-size: 18.26px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 49.8px;
+    height: 49.8px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 91.3px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -74.7px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 33.2px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 12.45px 66.4px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 62.25px;
+    height: 2.49px;
+    margin-top: 20.75px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 3.32px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 3.32px;
+    font-size: 29.88px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.415px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 16.6px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 37.35px;
+    line-height: 1.8;
+  }
 }
 @media all and (min-width: 1680px) and (max-width: 1919px) {
   body {
@@ -9523,9 +10478,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 30.625px;
+    padding: 0 30.625px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 105px;
+    padding: 0 87.5px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 43.75px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 3.5px;
+    margin-bottom: 10.5px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 61.25px;
+    padding-bottom: 4.375px;
+    font-size: 15.75px;
+    font-family: Asap-medium;
+    letter-spacing: 0.4375px;
+    border-bottom: 3.5px solid #ca4f24;
+    position: relative;
+    top: -21.875px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 48.125px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -4.375px;
+    right: -65.625px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 26.25px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 26.25px;
+    height: 26.25px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 0.875);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 127.75px;
+    height: 77px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 293.125px;
+    height: 43.75px;
+    padding-left: 13.125px;
+    border: 3.5px solid #19222f;
+    font-size: 21px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 31.5px;
+    height: 34.125px;
+    margin-left: -43.75px;
+    position: relative;
+    top: 13.125px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -10980,6 +12005,127 @@ body {
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
   }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 17.5px;
+    font-size: 52.5px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 65.625px 0 87.5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 568.75px;
+    height: 52.5px;
+    padding: 0 0 0 17.5px;
+    border: none;
+    font-size: 19.25px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 52.5px;
+    height: 52.5px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 96.25px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -78.75px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 13.125px 70px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 65.625px;
+    height: 2.625px;
+    margin-top: 21.875px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 3.5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 3.5px;
+    font-size: 31.5px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.4375px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 17.5px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 39.375px;
+    line-height: 1.8;
+  }
 }
 @media all and (min-width: 1920px) {
   body {
@@ -11339,9 +12485,79 @@ body {
   .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 35px;
+    padding: 0 35px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .main-wrapper .top-header {
+    display: flex;
+    height: 120px;
+    padding: 0 100px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-wrapper .top-header .nav-toggler {
+    display: inline-block;
+    width: 50px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-header .nav-toggler .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 12px;
+    background-color: #19222f;
+  }
+  .main-wrapper .top-header .follow-us {
+    margin-left: 70px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-family: Asap-medium;
+    letter-spacing: 0.5px;
+    border-bottom: 4px solid #ca4f24;
+    position: relative;
+    top: -25px;
+  }
+  .main-wrapper .top-header .follow-us:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 55px;
+    background-color: #19222f;
+    position: absolute;
+    bottom: -5px;
+    right: -75px;
+  }
+  .main-wrapper .top-header .follow-us-link {
+    margin-left: 30px;
+  }
+  .main-wrapper .top-header .follow-us-link img {
+    width: 30px;
+    height: 30px;
+  }
+  .main-wrapper .top-header .home-link {
+    position: absolute;
+    left: calc(50% - 73px * 1);
+  }
+  .main-wrapper .top-header .home-link-logo {
+    width: 146px;
+    height: 88px;
+  }
+  .main-wrapper .top-header .search-form-input {
+    width: 335px;
+    height: 50px;
+    padding-left: 15px;
+    border: 4px solid #19222f;
+    font-size: 24px;
+  }
+  .main-wrapper .top-header .search-form-submit-btn {
+    width: 36px;
+    height: 39px;
+    margin-left: -50px;
+    position: relative;
+    top: 15px;
+    opacity: .5;
   }
   .main-wrapper .header {
     margin-bottom: 13%;
@@ -12795,6 +14011,127 @@ body {
   }
   body.context-page .main-wrapper .content .tile-content .docs-links .slick-arrow {
     top: 50%;
+  }
+  body.search-results-page .main-wrapper .header {
+    margin-bottom: 0;
+  }
+  body.search-results-page .main-wrapper .header .tile-content {
+    padding: 0;
+    align-items: center;
+  }
+  body.search-results-page .main-wrapper .header .search-results-summary {
+    padding: 0 0 0 20px;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Century-schoolbook;
+  }
+  body.search-results-page .main-wrapper .header .search-term {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: Asap;
+    text-align: center;
+    text-transform: none;
+  }
+  body.search-results-page .main-wrapper .header .search-form {
+    margin: 75px 0 100px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-input {
+    width: 650px;
+    height: 60px;
+    padding: 0 0 0 20px;
+    border: none;
+    font-size: 22px;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: white;
+  }
+  body.search-results-page .main-wrapper .header .search-form-submit-btn img {
+    opacity: .5;
+  }
+  body.search-results-page .main-wrapper .content {
+    padding-top: 110px;
+    background-color: #efefef;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs {
+    top: -90px;
+  }
+  body.search-results-page .main-wrapper .content .breadcrumbs .current {
+    color: #ca4f24;
+  }
+  body.search-results-page .main-wrapper .content .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3%;
+    padding: 15px 80px 0;
+    box-sizing: border-box;
+    position: relative;
+    align-items: flex-start;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 3px;
+    margin-top: 25px;
+    background-color: #19222f;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) {
+    padding-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(-n + 3) .found-record-title {
+    margin-top: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before,
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n):before {
+    left: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record:nth-child(3n - 2):before {
+    right: 0;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title {
+    margin-bottom: 4px;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Asap-italic;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-title b {
+    font-weight: 400;
+    font-family: Asap-medium-italic;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-type {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  body.search-results-page .main-wrapper .content .search-results .found-record-text {
+    margin-top: 0;
+    padding-left: 45px;
+    line-height: 1.8;
   }
 }
 body {

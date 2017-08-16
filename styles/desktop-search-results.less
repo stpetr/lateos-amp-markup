@@ -1,0 +1,153 @@
+body.search-results-page {
+  .main-wrapper {
+
+    .header {
+      margin-bottom: 0;
+
+      .tile-content {
+        padding: 0;
+        align-items: center;
+      }
+
+      .search-results-summary {
+        padding: 0 0 0 20px * @ratio;
+        font-size: 60px * @ratio;
+        font-weight: 400;
+        text-transform: none;
+        font-family: Century-schoolbook;
+      }
+
+      .search-term {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: .5px;
+        font-family: Asap;
+        text-align: center;
+        text-transform: none;
+      }
+
+      .search-form {
+        margin: 75px * @ratio 0 100px * @ratio;
+
+        &-input {
+          width: 650px * @ratio;
+          height: 60px * @ratio;
+          padding: 0 0 0 20px * @ratio;
+          border: none;
+          font-size: 22px * @ratio;
+          box-sizing: border-box;
+          letter-spacing: .5px;
+        }
+
+        &-submit-btn {
+          width: 60px * @ratio;
+          height: 60px * @ratio;
+          padding: 0;
+          border: none;
+          vertical-align: bottom;
+          background-color: white;
+
+          img {
+            opacity: .5;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding-top: 110px * @ratio;
+      background-color: @lightGrey;
+
+      .breadcrumbs {
+        top: -90px * @ratio;
+
+        .current {
+          color: @orange;
+        }
+      }
+
+      .search-results {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px * @ratio;
+        justify-content: flex-start;
+
+        .found-record {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 33.3%;
+          padding: 15px * @ratio 80px * @ratio 0;
+          box-sizing: border-box;
+          position: relative;
+          align-items: flex-start;
+
+          &:after {
+            content: '';
+            display: block;
+            width: 75px * @ratio;
+            height: 3px * @ratio;
+            margin-top: 25px * @ratio;
+            background-color: @darkBlue;
+          }
+
+          &:nth-child(-n + 3) {
+            padding-top: 0;
+
+            .found-record-title {
+              margin-top: 0;
+            }
+          }
+
+          &:nth-child(3n), &:nth-child(3n - 2) {
+            &:before {
+              content: '';
+              display: inline-block;
+              width: 4px * @ratio;
+              background-color: white;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+            }
+          }
+
+          &:nth-child(3n) {
+            &:before {
+              left: 0;
+            }
+          }
+
+          &:nth-child(3n - 2) {
+            &:before {
+              right: 0;
+            }
+          }
+
+          &-title {
+            margin-bottom: 4px * @ratio;
+            font-size: 36px * @ratio;
+            font-weight: 400;
+            font-family: Asap-italic;
+            letter-spacing: .5px * @ratio;
+            line-height: 1;
+
+            b {
+              font-weight: 400;
+              font-family: Asap-medium-italic;
+            }
+          }
+
+          &-type {
+            margin-top: 0;
+            font-size: 20px * @ratio;
+          }
+
+          &-text {
+            margin-top: 0;
+            padding-left: 45px * @ratio;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}
