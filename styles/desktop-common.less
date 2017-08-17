@@ -508,6 +508,8 @@ body {
     }
 
     .search-form {
+      position: relative;
+
       &-input {
         width: 335px * @ratio;
         height: 50px * @ratio;
@@ -520,8 +522,9 @@ body {
         width: 36px * @ratio;
         height: 39px * @ratio;
         margin-left: -50px * @ratio;
-        position: relative;
-        top: 15px * @ratio;
+        position: absolute;
+        top: 10px * @ratio;
+        right: 10px * @ratio;
         opacity: .5;
       }
     }
