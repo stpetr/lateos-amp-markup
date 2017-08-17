@@ -24,6 +24,17 @@ $(function() {
         });
     })();
 
+    // Handle main menu
+    (function() {
+        $('.nav-toggler').on('click', function() {
+            $('.main-menu').toggleClass('open', true);
+        });
+
+        $('.nav-close-btn').on('click', function() {
+            $('.main-menu').toggleClass('open', false);
+        });
+    })();
+
     // Handle side menu
     (function() {
         var $menu = $('.side-menu');
