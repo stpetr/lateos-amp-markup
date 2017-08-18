@@ -99,4 +99,183 @@ body.admin-page {
       }
     }
   }
+
+  &.contact {
+    .underlined {
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 55px * @ratio;
+        height: 2px * @ratio;
+        position: absolute;
+        left: 2px * @ratio;
+        bottom: -25px * @ratio;
+        background-color: @darkBlue;
+      }
+    }
+
+    .main-wrapper {
+      padding-top: 42px;
+
+      .content {
+        padding: 0 140px * @ratio;
+
+        .breadcrumbs {
+          margin-left: -100px * @ratio;
+
+          .current {
+            color: @orange;
+          }
+        }
+
+        .block-header {
+          .underlined;
+
+          position: relative;
+          font-size: 30px * @ratio;
+          letter-spacing: 2.5px * @ratio;
+          text-transform: uppercase;
+        }
+
+        form {
+          fieldset {
+            padding: 0;
+            border: none;
+
+            legend {
+              display: none;
+            }
+          }
+
+          input, textarea {
+            font-size: 18px * @ratio;
+            padding: 4px * @ratio 8px * @ratio;
+            box-sizing: border-box;
+          }
+
+          label {
+            display: block;
+            margin-bottom: 20px * @ratio;
+            font-family: Asap-medium;
+            font-size: 18px * @ratio;
+            letter-spacing: 3px * @ratio;
+            text-transform: uppercase;
+          }
+
+          input[type="radio"] {
+            width: 40px * @ratio;
+            height: 40px * @ratio;
+            margin: 0 30px * @ratio 50px * @ratio 0;
+          }
+
+          #edit-madame-monsieur {
+            .underlined;
+
+            position: relative;
+            margin-top: 105px * @ratio;
+
+            label {
+              display: inline-block;
+              position: relative;
+              top: -15px * @ratio;
+            }
+          }
+
+          #edit-personal {
+            .underlined;
+
+            position: relative;
+            margin-top: 55px * @ratio;
+            margin-bottom: 80px * @ratio;
+
+            &:after {
+              bottom: -40px * @ratio;
+            }
+
+            .form-item {
+              display: inline-block;
+              margin-right: 65px * @ratio;
+
+              label {
+                display: block;
+              }
+
+              input {
+                display: block;
+                width: 335px * @ratio;
+                height: 35px * @ratio;
+              }
+            }
+          }
+
+          .form-item-message-type {
+            margin-bottom: 80px * @ratio;
+
+            label {
+
+            }
+
+            select {
+              display: block;
+              height: 40px * @ratio;
+              width: 335px * @ratio;
+              padding: 8px * @ratio 16px * @ratio;
+              font-size: 18px * @ratio;
+              text-transform: uppercase;
+              background-color: @orange;
+              color: white;
+              border: none;
+
+              option {
+                padding: 4px * @ratio 8px * @ratio;
+              }
+            }
+          }
+
+          .form-item-message {
+            margin-bottom: 80px * @ratio;
+
+            textarea {
+              width: 750px * @ratio;
+              height: 290px * @ratio;
+            }
+          }
+
+          .form-item-terms-of-service {
+            margin-bottom: 40px * @ratio;
+
+            label {
+              display: inline-block;
+              text-transform: initial;
+              line-height: 40px;
+              letter-spacing: 1px * @ratio;
+              vertical-align: top;
+            }
+
+            input {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              margin-right: 12px * @ratio;
+            }
+          }
+
+          .form-actions {
+            margin: 60px * @ratio 0;
+
+            .form-submit {
+              padding: 8px * @ratio 44px * @ratio;
+              font-family: Asap-medium;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              color: @orange;
+              background-color: transparent;
+              border: 1px solid @orange;
+
+            }
+          }
+        }
+      }
+    }
+  }
 }
