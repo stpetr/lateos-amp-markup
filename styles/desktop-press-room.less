@@ -1,0 +1,110 @@
+body.press-room-page {
+  .main-wrapper {
+
+    .header {
+
+    }
+
+    .content {
+      .breadcrumbs {
+        .current {
+          color: @mediumLightBlue;
+        }
+      }
+
+      .search-block {
+        .search-form {
+          .search-form-fn();
+
+          display: inline-block;
+
+          &:last-of-type {
+            margin-left: 60px * @ratio;
+          }
+        }
+      }
+
+      .block-header {
+        .block-header-underlined-fn(@mediumLightBlue, 55px);
+
+        margin-bottom: 0;
+
+        &-date {
+          margin: -42px * @ratio 0 60px * @ratio 0;
+          font-family: Century-schoolbook;
+          font-size: 32px * @ratio;
+        }
+      }
+
+      .events {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px * @ratio;
+        justify-content: flex-start;
+        background-color: @lightGrey;
+
+        .event {
+          display: flex;
+          flex: 0 0 33.3%;
+          padding: 80px * @ratio 60px * @ratio;
+          box-sizing: border-box;
+          position: relative;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          &:nth-child(3n-1) {
+            &:before, &:after {
+              content: '';
+              display: inline-block;
+              width: 4px;
+              height: 110px;
+              background-color: white;
+              position: absolute;
+              top: ~"calc(50% - 35px)";
+            }
+
+            &:before {
+              left: 0;
+            }
+
+            &:after {
+              right: 0;
+            }
+          }
+
+          &-image {
+            width: 80px * @ratio;
+            height: 80px * @ratio;
+            margin: 0;
+            border-radius: 10px * @ratio;
+          }
+
+          &-download {
+            margin: 60px * @ratio 30px * @ratio 0 5px * @ratio;
+            position: relative;
+          }
+
+          &-text {
+            position: relative;
+            margin: -7px * @ratio 0 0 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 15px * @ratio;
+            line-height: 31px * @ratio;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              height: 4px * @ratio;
+              width: 75px * @ratio;
+              position: absolute;
+              left: 0;
+              bottom: -50px * @ratio;
+              background: @darkBlue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
