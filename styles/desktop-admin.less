@@ -1,0 +1,102 @@
+body.admin-page {
+  &.directions {
+    .main-wrapper {
+
+      .header {
+        .header-with-category-fn(@lightBlue);
+
+        .tile-content {
+          justify-content: flex-end;
+          padding-bottom: 145px * @ratio;
+          padding-left: 580px * @ratio;
+        }
+      }
+
+      .content {
+        .breadcrumbs {
+          .current {
+            color: @lightBlue;
+          }
+        }
+
+        .records {
+          &-row {
+            display: flex;
+            width: ~"calc(100% - 120px * @{ratio})";
+            margin: 0 auto 60px * @ratio;
+            padding-bottom: 35px * @ratio;
+            flex-direction: row;
+            border-bottom: 1px solid @darkBlue;
+            justify-content: space-between;
+
+            .record {
+              display: flex;
+              flex-direction: column;
+              flex: 0 0 23%;
+              position: relative;
+
+              &-type {
+                margin: 0;
+                font-family: Asap-medium;
+                font-size: 22px * @ratio;
+                color: @lightBlue;
+              }
+
+              &-title {
+                position: relative;
+                margin: 42px * @ratio 0 0 0;
+                font-family: Victoire-bold;
+                font-size: 30px * @ratio;
+                line-height: 1;
+                letter-spacing: 2px * @ratio;
+
+                &:before {
+                  position: absolute;
+                  top: -25px * @ratio;
+                  left: 5px;
+                  content: '';
+                  display: block;
+                  width: 75px * @ratio;
+                  height: 4px * @ratio;
+                  background-color: black;
+                }
+
+                &:after {
+                  content: '';
+                  display: inline-block;
+                  width: 4px * @ratio;
+                  height: 85px * @ratio;
+                  background-color: black;
+                  position: absolute;
+                  right: 0;
+                  top: 8px * @ratio;
+                }
+              }
+
+              &-person {
+                margin: 5px * @ratio 0 30px * @ratio 0;
+                font-family: Victoire-bold;
+                font-size: 20px * @ratio;
+                letter-spacing: .5px;
+              }
+
+              &-contact-btn {
+                display: inline-block;
+                margin: auto 0 0 0;
+                padding: 10px * @ratio;
+                align-self: flex-start;
+                font-family: Asap-medium;
+                font-size: 14px * @ratio;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: white;
+                background-color: @lightBlue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

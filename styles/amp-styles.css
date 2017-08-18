@@ -2217,6 +2217,106 @@ body {
     padding-left: 23.85px;
     line-height: 1.8;
   }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 34.45px;
+    margin-bottom: 0;
+    font-size: 11.66px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -15.9px;
+    content: '';
+    display: inline-block;
+    width: 55.65px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 12.72px 0 0 -3.71px;
+    font-family: Century-schoolbook;
+    font-size: 28.62px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 76.85px;
+    padding-left: 307.4px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 0.53);
+    margin: 0 auto 31.8px;
+    padding-bottom: 18.55px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 11.66px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 22.26px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 15.9px;
+    line-height: 1;
+    letter-spacing: 1.06px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -13.25px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 39.75px;
+    height: 2.12px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 2.12px;
+    height: 45.05px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 4.24px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 2.65px 0 15.9px 0;
+    font-family: Victoire-bold;
+    font-size: 10.6px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 5.3px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 7.42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1365px) {
   body {
@@ -4349,6 +4449,106 @@ body {
     margin-top: 0;
     padding-left: 29.7px;
     line-height: 1.8;
+  }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 42.9px;
+    margin-bottom: 0;
+    font-size: 14.52px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -19.8px;
+    content: '';
+    display: inline-block;
+    width: 69.3px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 15.84px 0 0 -4.62px;
+    font-family: Century-schoolbook;
+    font-size: 35.64px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 95.7px;
+    padding-left: 382.8px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 0.66);
+    margin: 0 auto 39.6px;
+    padding-bottom: 23.1px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 14.52px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 27.72px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 19.8px;
+    line-height: 1;
+    letter-spacing: 1.32px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -16.5px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 49.5px;
+    height: 2.64px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 2.64px;
+    height: 56.1px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 5.28px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 3.3px 0 19.8px 0;
+    font-family: Victoire-bold;
+    font-size: 13.2px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 6.6px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 9.24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
   }
 }
 @media all and (min-width: 1366px) and (max-width: 1439px) {
@@ -6483,6 +6683,106 @@ body {
     padding-left: 31.95px;
     line-height: 1.8;
   }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 46.15px;
+    margin-bottom: 0;
+    font-size: 15.62px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -21.3px;
+    content: '';
+    display: inline-block;
+    width: 74.55px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 17.04px 0 0 -4.97px;
+    font-family: Century-schoolbook;
+    font-size: 38.34px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 102.95px;
+    padding-left: 411.8px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 0.71);
+    margin: 0 auto 42.6px;
+    padding-bottom: 24.85px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 15.62px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 29.82px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 21.3px;
+    line-height: 1;
+    letter-spacing: 1.42px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -17.75px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 53.25px;
+    height: 2.84px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 2.84px;
+    height: 60.35px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 5.68px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 3.55px 0 21.3px 0;
+    font-family: Victoire-bold;
+    font-size: 14.2px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 7.1px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 9.94px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
+  }
 }
 @media all and (min-width: 1440px) and (max-width: 1599px) {
   body {
@@ -8615,6 +8915,106 @@ body {
     margin-top: 0;
     padding-left: 33.75px;
     line-height: 1.8;
+  }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 48.75px;
+    margin-bottom: 0;
+    font-size: 16.5px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -22.5px;
+    content: '';
+    display: inline-block;
+    width: 78.75px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 18px 0 0 -5.25px;
+    font-family: Century-schoolbook;
+    font-size: 40.5px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 108.75px;
+    padding-left: 435px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 0.75);
+    margin: 0 auto 45px;
+    padding-bottom: 26.25px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 16.5px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 31.5px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 22.5px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -18.75px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 56.25px;
+    height: 3px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 63.75px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 3.75px 0 22.5px 0;
+    font-family: Victoire-bold;
+    font-size: 15px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 7.5px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
   }
 }
 @media all and (min-width: 1600px) and (max-width: 1679px) {
@@ -10749,6 +11149,106 @@ body {
     padding-left: 37.35px;
     line-height: 1.8;
   }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 53.95px;
+    margin-bottom: 0;
+    font-size: 18.26px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -24.9px;
+    content: '';
+    display: inline-block;
+    width: 87.15px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 19.92px 0 0 -5.81px;
+    font-family: Century-schoolbook;
+    font-size: 44.82px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 120.35px;
+    padding-left: 481.4px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 0.83);
+    margin: 0 auto 49.8px;
+    padding-bottom: 29.05px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 18.26px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 34.86px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 24.9px;
+    line-height: 1;
+    letter-spacing: 1.66px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -20.75px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 62.25px;
+    height: 3.32px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 3.32px;
+    height: 70.55px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 6.64px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 4.15px 0 24.9px 0;
+    font-family: Victoire-bold;
+    font-size: 16.6px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 8.3px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 11.62px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
+  }
 }
 @media all and (min-width: 1680px) and (max-width: 1919px) {
   body {
@@ -12882,6 +13382,106 @@ body {
     padding-left: 39.375px;
     line-height: 1.8;
   }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 56.875px;
+    margin-bottom: 0;
+    font-size: 19.25px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -26.25px;
+    content: '';
+    display: inline-block;
+    width: 91.875px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 21px 0 0 -6.125px;
+    font-family: Century-schoolbook;
+    font-size: 47.25px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 126.875px;
+    padding-left: 507.5px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 0.875);
+    margin: 0 auto 52.5px;
+    padding-bottom: 30.625px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 19.25px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 36.75px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 26.25px;
+    line-height: 1;
+    letter-spacing: 1.75px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -21.875px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 65.625px;
+    height: 3.5px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 3.5px;
+    height: 74.375px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 7px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 4.375px 0 26.25px 0;
+    font-family: Victoire-bold;
+    font-size: 17.5px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 8.75px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 12.25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
+  }
 }
 @media all and (min-width: 1920px) {
   body {
@@ -15014,6 +15614,106 @@ body {
     margin-top: 0;
     padding-left: 45px;
     line-height: 1.8;
+  }
+  body.admin-page.directions .main-wrapper .header .category {
+    position: relative;
+    margin-top: 65px;
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .header .category:before {
+    position: absolute;
+    top: -30px;
+    content: '';
+    display: inline-block;
+    width: 105px;
+    height: 3px;
+    background-color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .title {
+    margin: 24px 0 0 -7px;
+    font-family: Century-schoolbook;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: #19222f;
+  }
+  body.admin-page.directions .main-wrapper .header .tile-content {
+    justify-content: flex-end;
+    padding-bottom: 145px;
+    padding-left: 580px;
+  }
+  body.admin-page.directions .main-wrapper .content .breadcrumbs .current {
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row {
+    display: flex;
+    width: calc(100% - 120px * 1);
+    margin: 0 auto 60px;
+    padding-bottom: 35px;
+    flex-direction: row;
+    border-bottom: 1px solid #19222f;
+    justify-content: space-between;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    position: relative;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-type {
+    margin: 0;
+    font-family: Asap-medium;
+    font-size: 22px;
+    color: #bbd9d6;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title {
+    position: relative;
+    margin: 42px 0 0 0;
+    font-family: Victoire-bold;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:before {
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    background-color: black;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-title:after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 85px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-person {
+    margin: 5px 0 30px 0;
+    font-family: Victoire-bold;
+    font-size: 20px;
+    letter-spacing: .5px;
+  }
+  body.admin-page.directions .main-wrapper .content .records-row .record-contact-btn {
+    display: inline-block;
+    margin: auto 0 0 0;
+    padding: 10px;
+    align-self: flex-start;
+    font-family: Asap-medium;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #bbd9d6;
   }
 }
 body {

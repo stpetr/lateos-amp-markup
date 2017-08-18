@@ -242,6 +242,35 @@ body {
   }
 }
 
+.header-with-category-fn(@color: @darkBlue) {
+  .category {
+    position: relative;
+    margin-top: 65px * @ratio;
+    margin-bottom: 0;
+    font-size: 22px * @ratio;
+    color: @color;
+
+    &:before {
+      position: absolute;
+      top: -30px * @ratio;
+      content: '';
+      display: inline-block;
+      width: 105px * @ratio;
+      height: 3px;
+      background-color: @darkBlue;
+    }
+  }
+
+  .title {
+    margin: 24px * @ratio 0 0 -7px * @ratio;
+    font-family: Century-schoolbook;
+    font-size: 54px * @ratio;
+    line-height: 1;
+    letter-spacing: 7px;
+    color: @darkBlue;
+  }
+}
+
 .header-with-icon {
   .header-with-icon-fn();
 }
